@@ -1,0 +1,679 @@
+<html lang='en'>
+    <head>
+        <title>Sargam 2022</title>
+        <meta charset="utf-8">
+        <meta name = "theme-color" content="#121111">
+        <meta name = "description" content="Official Website of SARGAM 2022">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Silkscreen&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+          <!-- swiper css link  -->
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+     <style>
+          @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+.back_video{
+  height:auto;
+  width: : 100%;
+}
+
+header
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 40px 100px;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo
+{
+  color: #fff;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.toggle
+{
+  position: relative;
+  width: 60px;
+  height: 60px;
+  background: url(https://i.ibb.co/HrfVRcx/menu.png);
+  background-repeat: no-repeat;
+  background-size: 30px;
+  background-position: center;
+  cursor: pointer;
+}
+.toggle.active
+{
+  background: url(https://i.ibb.co/rt3HybH/close.png);
+  background-repeat: no-repeat;
+  background-size: 25px;
+  background-position: center;
+  cursor: pointer;
+}
+.showcase
+{
+  position: relative;
+  right: 0;
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #111;
+  transition: 0.5s;
+  z-index: 2;
+}
+.showcase.active
+{
+  right: 300px;
+}
+
+.showcase video
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+.overlay
+{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #03a9f4;
+  mix-blend-mode: overlay;
+}
+.text
+{
+  position: relative;
+  z-index: 10;
+}
+
+.text h2
+{
+  font-size: 5em;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text h3
+{
+  font-size: 4em;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.text p
+{
+  font-size: 1.1em;
+  color: #fff;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+.text a
+{
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  margin-top: 10px;
+  color: #111;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+.text a:hover
+{
+  letter-spacing: 6px;
+}
+.social
+{
+  position: absolute;
+  z-index: 10;
+  bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social li
+{
+  list-style: none;
+}
+.social li a
+{
+  display: inline-block;
+  margin-right: 20px;
+  filter: invert(1);
+  transform: scale(0.5);
+  transition: 0.5s;
+}
+.social li a:hover
+{
+  transform: scale(0.5) translateY(-15px);
+}
+.menu
+{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu ul
+{
+  position: relative;
+}
+.menu ul li
+{
+  list-style: none;
+}
+.menu ul li a
+{
+  text-decoration: none;
+  font-size: 24px;
+  color: #111;
+}
+.menu ul li a:hover
+{
+  color: #03a9f4; 
+}
+
+@media (max-width: 991px)
+{
+  .showcase,
+  .showcase header
+  {
+    padding: 40px;
+  }
+  .text h2
+  {
+    font-size: 3em;
+  }
+  .text h3
+  {
+    font-size: 2em;
+  }
+}
+.banner{
+        width: 100%;
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+    }
+ .header   .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+    .logo{
+        width: 120px;
+        cursor: pointer;
+        color:blue;
+    }
+   .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 20px;
+        position: relative;
+
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: black;
+        text-transform: uppercase;
+        color: #fff;
+  cursor: pointer;
+    }
+    .header .navbar a:hover {
+        color: rgb(255, 0, 170);
+      }
+    .navbar .icons a,
+.navbar.icons div {
+  font-size: 2.5rem;
+  margin-left: 2rem;
+  cursor: pointer;
+  color: #10221b;
+}
+
+.navbar .icons a:hover,
+.navbar .icons div:hover {
+  color: #219150;
+}
+.about{
+   background:#fff;
+   background-size: cover;
+   background-position: center;
+   width:auto;
+   height: 100vh;
+   text-align: center;
+   display: flex;
+}
+.AboutUsWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-bottom: 20px;
+    width: 100vw;
+}
+.aboutUsDetails {
+    font-family: Forgotten Futurist;
+    font-size: 20px;
+    letter-spacing: .12em;
+    line-height: 46px;
+    margin: 0 150px;
+}
+.aboutUsDetails, .aboutUsHeading {
+    color: black;
+    font-style: normal;
+    font-weight: 400;
+    z-index: 2;
+}      
+
+.aboutUsHeading {
+    font-family: Pirulen;
+    font-size: 2.5rem;
+    line-height: 76.8px;
+    line-height: 77px;
+    margin: 50px;
+}
+.aboutUsHeading {
+    font-size: 3rem;
+    margin: 100px 10vw 30px;
+}
+
+
+.Videos{
+   
+   background: black;
+   background-size: cover;
+   background-position: center;
+   width: 100%;
+        height: 100vh;
+
+}
+.mainVideoWrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 100vh;
+    margin-bottom: 40px;
+    width: 100vw;
+}
+
+.videoWrapper {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
+    margin: 0 50px 60px;
+}
+.video1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+.video1 div, .video2 div {
+    border: 26px solid transparent;
+    border-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAsoAAAGuCAYAAACJGyCRAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAdISURBVHgB7dixDQJBEATBPUT+KT+HARjfFjjoVeXshtCadWwDF7S2AQD40m0AAICT++uxvgEAwIdFGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgD+3BgAAeDu2570NAABwIpQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIAhlAAAIQhkAAIJQBgCAIJQBACAIZQAACEIZAACCUAYAgCCUAQAgCGUAAAhCGQAAglAGAIAglAEAIKwBAPjBsQ1ckEUZAADCAz5tDnBlvpaLAAAAAElFTkSuQmCC) 5% round;
+    z-index: 2;
+}
+.video2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.video1 div, .video2 div {
+    border: 26px solid transparent;
+    border-image: url(data:image/png;base64,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) 5% round;
+    z-index: 2;
+}
+.videoWrapper span {
+    z-index: 2;
+}
+.video1 span, .video2 span {
+    color: rgb(255, 255, 255);
+    font-family: Forgotten Futurist;
+    font-size: 1.75rem;
+    margin-left: 30px;
+}
+span {
+    padding: 10px;
+}
+
+
+
+
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+[data-aos][data-aos][data-aos-easing=ease-in-sine], body[data-aos-easing=ease-in-sine] [data-aos] {
+    transition-timing-function: cubic-bezier(.47,0,.745,.715);
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .4s;
+}
+[data-aos^=fade][data-aos^=fade].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+}
+[data-aos][data-aos][data-aos-easing=ease-in-sine], body[data-aos-easing=ease-in-sine] [data-aos] {
+    transition-timing-function: cubic-bezier(.47,0,.745,.715);
+}
+[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
+    transition-duration: .4s;
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="2000"], body[data-aos-duration="2000"] [data-aos] {
+    transition-duration: 2s;
+}
+[data-aos][data-aos][data-aos-easing=ease], body[data-aos-easing=ease] [data-aos] {
+    transition-timing-function: ease;
+}
+[data-aos][data-aos][data-aos-duration="2000"], body[data-aos-duration="2000"] [data-aos] {
+    transition-duration: 2s;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,-webkit-transform;
+    transition-property: opacity,transform;
+    transition-property: opacity,transform,-webkit-transform;
+}
+[data-aos^=fade][data-aos^=fade] {
+    opacity: 0;
+    transition-property: opacity,transform;
+}
+
+
+
+
+
+.container{
+        max-width: 1170px;
+        margin: auto;
+    }
+    .footer{
+        background:grey;
+        padding: 70px 0;
+    }
+    .footer-col ul{
+        list-style: none;
+    }
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .footer-col{
+        width: 25%;
+        padding: 0 15px;
+    }
+    .footer-col h3{
+        font-size: 18px;
+        color: white;
+        text-transform: capitalize;
+        margin-bottom: 35px;
+        font-weight: 500;
+        position: relative;
+    }
+    .footer-col p{
+        color: #ffffff;
+        text-transform: capitalize;
+    }
+    .footer-col h3::before{
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        background: #e91e63;
+        height: 2px;
+        box-sizing: border-box;
+        width: 50px;
+    }
+    .footer-col ul li:not(:last-child){
+        margin-bottom: 10px;
+    }
+    .footer-col ul li a{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col ul li  a:hover{
+        color: #ffff;
+        padding-left:8px ;
+    }
+    .footer-col .locate{
+        font-size: 16px;
+        text-transform: capitalize;
+        color: white;
+        text-decoration: none;
+        font-weight: 300;
+        color: #bbbbbb;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .footer-col .locate:hover{
+        color: #ffff;
+        padding-left:8px ;
+    }
+   
+    .footer-col .social-links a{
+        display: inline-block;
+        height: 40px;
+        width: 40px;
+        background-color: rgba(255, 255,255, 0.2);
+        margin:0 10px 10px 0;
+        text-align: center;
+        line-height: 40px;
+        border-radius: 50%;
+        color: #ffffff;
+        transition: all 0.3s ease;
+    }
+    .footer-col .social-links a:hover{
+        color: #24262b;
+        background-color: #ffffff;
+    }
+    @media(max-width:767px){
+        .footer-col{
+            width: 50%;
+            margin-bottom: 30px;
+        }
+    }
+    @media(max-width:574px){
+        .footer-col{
+            width: 100%;
+        }
+    }
+    .mn_video{
+        height: Auto;
+        width: 100%;
+    }
+        
+    </style>
+     <script>
+        window.onload = function() {
+            document.getElementById('content').style.display = 'none';
+          };
+        
+
+        
+        setTimeout(()=>{
+            const intro = document.getElementById('intro');
+            intro.style.display='none';
+            
+
+        },5000);
+        setTimeout(()=>{
+            const content = document.getElementById('content');
+            content.style.display='block';
+        },5000);
+        
+    </script>
+   
+    </head>
+    
+    
+    <body >
+        
+        
+        <div class="load_scrn" id="intro">
+            <video autoplay muted class="mn_video"
+                <source src="C:\Users\Suman\Documents\images\video1.mp4" type="video/mp4">
+            </video>
+            
+        </div>
+        <div id="content">
+
+            <section class="showcase">
+                <header>
+                  <h2 class="logo">Sargam'22</h2>
+                   <div class="navbar">
+                   
+                   <ul>
+                       <li><a href="#home">home</a></li>
+                       <li><a href="#about-us">about us</a></li>
+                       <li><a href="C:\Users\Suman\Documents\cards.html">events</a></li>
+                       <li><a href="#Videos">Sponsors</a></li>
+                       <li><a href="#connect">connect</a></li>
+                   </ul>
+                   </div>
+                 </header>
+                 <video src="C:\Users\Suman\Documents\images\video2.mp4" muted loop autoplay></video>
+                 <div class="overlay"></div>
+                 <div class="text">
+                 
+                   <a href="C:\Users\Suman\Documents\cards.html">Explore Now ⮕</a>
+                 </div>
+                <ul class="social">
+                 <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                 <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                 <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                 <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                </ul>
+              </section>
+
+
+
+              <section id="about-us">
+                <div class=" about-us container">
+                    <div class="about-us-top">
+                      <div class="about" id="about-us">
+                      <div class="AboutUsWrapper">
+                      <div class="SectionHeading aboutUsHeading aos-init aos-animate" data-aos="fade-up" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-duration="400">ABOUT US</div>
+                      <div class="aboutUsDetails">SARGAM is an annual state level inter collegiate cultural fest, which provides a great opportunity for the students to involve themselves in various activities which are quite diverse and challenging.This year’s major attraction was the theme “VOICE OUT”. The mega event “MUZIKET’ provided the opportunity to use their creative talents, to voice out against the evils that pull our country down.SARGAM, this year, calls forth today's youth to celebrate and recognize the true heroes of our country, the ones who give up their today for our tomorrow.Sargam-2019 was inaugurated by Padma Shri. A.S Kiran Kumar, Indian Space Scientist & former Chairman, ISRO.Sargam-2018 - ‘Krishna Leela-Magic of the Flute’ was inaugurated by Shri. Vasudeva Keshavadasa, Vice President of ISKCON, Bengaluru
+                    </div>
+                </div>
+                  </div>
+                  </div>
+                     </div>
+                </section>
+
+
+                <section class="videos">
+                    <div class="Videos" id="Videos">
+                    <div class="mainVideoWrapper">
+                   <div class="SectionHeading aboutUsHeading videoHeading aos-init aos-animate" data-aos="fade-up" data-aos-offset="50" data-aos-easing="ease-in-sine" data-aos-duration="400">Videos</div>
+                       <div class="videoWrapper">
+                           <div class="video1">
+                               <div>
+                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/m8SJSIoTDZw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                               </div>
+                               <span>Theme Reveal'22</span>
+                           </div>
+                           <div class="video2">
+                               <div>
+                                   <iframe width="560" height="315" src="https://www.youtube.com/embed/3F4rh1PeqIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </div>
+                           <span>Sargam'19 </span>
+                       </div>
+                   </div>
+                   </div>
+                   </div>
+                  </section>
+
+
+                  
+ <footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col">
+                <h3>About Us</h3>
+                <p>SARGAM is an annual state level inter collegiate cultural fest,
+                     which provides a great opportunity for the students to involve themselves in various activities which are quite diverse and challenging.</p>
+            </div>
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Events</a></li>
+                    <li><a href="#">Sponsors</a></li>
+                    <li><a href="#">Connect</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Location</h3>
+                <a class="locate" href="#"> <i class="fas fa-phone"></i> 080-6629-7777 </a><br>
+                <a class="locate" href="#"> <i class="fas fa-envelope"></i> studentsclub@nhce.com </a><br>
+                <a class="locate" href="#"> <i class="fas fa-map"></i>New horizon college of engineering  bangalore, india - 560103 </a>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                <a href="#"> <i class="fab fa-facebook-f"></i></a>
+                <a href="#"> <i class="fab fa-twitter"></i></a>
+                <a href="#"> <i class="fab fa-instagram"></i></a>
+                <a href="#"> <i class="fab fa-linkedin"></i></a>
+            </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+        </div>
+    </body>
+</html>
